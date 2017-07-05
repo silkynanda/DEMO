@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="Scripts/knockout-3.4.0.js"></script>
+    <title></title>
+</head>
+<body>
+
+    <h4>People</h4>
+    <ul data-bind="foreach: people">
+        <li>
+            Name at position <span data-bind="text: $index"> </span>:
+            <span data-bind="text: name"> </span>
+            <a href="#" data-bind="click: $parent.removePerson">Remove</a>
+        </li>
+    </ul>
+    <button data-bind="click: addPerson">Add</button>
+
+    <script src="Scripts/ViewModels/AddRemoveViewModel.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="Scripts/knockout-3.4.0.js"></script>
+    <script src="Scripts/ViewModels/AddressBook.js"></script>
+    <title></title>
+</head>
+<body>
+    <h1>Record</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Opponent</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: gameResults">
+            <tr>
+                <td><input type="text" data-bind="value: opponent"></td>
+                <td><select data-bind="options: $root.resultChoices, value:result, optionsText: $data"></select></td>
+            </tr>
+        </tbody>
+
+    </table>
+    <button data-bind="click: addResult">Add New Result</button>
+   
+    <script src="Scripts/ViewModels/AddressBook.js"></script>
+</body>
+</html>
