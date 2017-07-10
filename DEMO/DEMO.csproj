@@ -68,6 +68,7 @@
   <ItemGroup>
     <Content Include="AddRemove.html" />
     <Content Include="Check.html" />
+    <Content Include="Example.html" />
     <Content Include="Home.html" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
@@ -98,6 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\ViewModels\AddRemoveViewModel.ts" />
+    <TypeScriptCompile Include="Scripts\ViewModels\ExampleViewModel.ts" />
     <TypeScriptCompile Include="Scripts\ViewModels\HomeViewModel.ts" />
     <TypeScriptCompile Include="Scripts\typings\knockout\knockout.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\knockout\tests\jasmine.extensions.d.ts" />
